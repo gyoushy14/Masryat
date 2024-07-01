@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap");
+* {
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Playpen Sans", cursive;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "Tilt Neon", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-color: #eee;
+  margin: 0;
+}
+li a button {
+  font-weight: 500;
+  font-size: 30px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.grand {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.all {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: aliceblue;
+  color: black;
+  border-color: aliceblue;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgb(27, 26, 26);
+  transition: 0.5s;
+}
+.all:hover {
+  background-color: rgb(214, 155, 5);
+  color: black;
+  transform: scale(1.1);
+}

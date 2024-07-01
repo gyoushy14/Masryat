@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="social.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0.900), rgba(5, 5, 5, 0.900)), url("output_image.png");
+            background-size: cover;
+        }
+
+        input {
+            background-color: aliceblue;
+            border: 2px aliceblue solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-black" style="background-color:rgb(214, 155, 5); position: sticky;  top: 0;">
+        <nav class="container navbar navbar-expand-md navs text-black" id="nav_bar">
+            <div class="container-fluid">
+                <a class="navbar-brand  fw-bolder fs-2 text-black mb-2 fst-italic" href="#">مصريات</a>
+                <button class="navbar-toggler navbar-dark fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fw-bold"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav gap-2 ">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold pl text-black " aria-current="page" href="#"><i
+                                    class="fa-solid fa-house ms-2"></i>الصفحة
+                                الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold alink pl text-black" href="#persons"><i
+                                    class="fa-solid fa-user ms-2"></i>الشخصيات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold alink pl text-black" href="aboutus.html"><i
+                                    class="ms-2 fa-solid fa-address-card"></i>معلومات عنا</a>
+                        </li>
+                    </ul>
+                    <ul class="me-auto navbar nav">
+                        <li class="nav-item buttons">
+                            <a class="nav-link rounded-pill fw-bold log text-black" id="login_out" href="#"><i
+                                    class="fa-solid fa-book"></i> اسئلة</a>
+                        </li>
+                        <li class="nav-item buttons">
+                            <a class="nav-link rounded-pill fw-bold log text-black" href="sociallogin.html"><i
+                                    class="ms-2 fa-solid fa-right-to-bracket"></i>تسجيل دخول</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <div class="container w-50 p-3 border border-5 border-white mb-5 mt-5" style="border-radius: 20px;">
+        <h1 class="text-center mb-5 text-white">سجل الان <i class="fa-brands fa-wpforms"></i></h1>
+        <form class="form" id="form_login">
+
+            <h6 class="text-center alert alert-dark m-5" id="empty_alert" style="display: none; background-color: red;">من فضلك ادخل جميع البيانات !</h6>
+            <h6 class="text-center alert alert-dark m-5" id="added_alert" style="display: none; background-color:green;">تم ادخال البيانات </h6>
+
+
+            <div class="d-flex gap-2">
+                <i class="fa-solid fa-user fa-2xl text-white"></i><input type="text" autofocus required
+                    placeholder="ادخل اسمك" class="form-control" id="ini_name"><br>
+            </div><br>
+            <div class="d-flex gap-2">
+                <i class="fa-solid fa-lock fa-2xl text-white"></i><input type="password" autocomplete="" autofocus
+                    required placeholder="ادخل كلمة السر" class="form-control" id="ini_pass"><br>
+            </div><br>
+            <div class="d-flex gap-2">
+                <i class="fa-solid fa-envelope fa-2xl text-white"></i><input type="email" id="ini_email" autofocus
+                    required placeholder="ادخل البريد الالكتروني" class="form-control"><br>
+            </div><br>
+            <div class="d-flex gap-2">
+                <i class="fa-solid fa-phone fa-2xl text-white"></i><input type="text" id="ini_phone" autofocus required
+                    placeholder="ادخل رقم الهاتف" class="form-control"><br>
+            </div>
+        </form><br>
+        <div class="text-center">
+            <button class="btn btn-outline-light btn text-center" id="submit">ارسال</button>
+        </div>
+    </div>
+    <br><br>
+    <!-- footer -->
+    <div style="background-color:rgb(214, 155, 5) ;" class="mt-2 p-2">
+        <div class="container row  text-center">
+            <div class="col-4">
+                <ul style="list-style: none;">
+                    <li class="fw-bold text-black">الموقع</li><br>
+                    <li><a href="aboutus.html" class="footerlink">معلومات عنا</a></li><br>
+                    <li><a href="aboutus.html" class="footerlink">تواصل معنا </a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul style="list-style: none;">
+                    <li class="fw-bold text-black">اشراف</li><br>
+                    <li class="text-black names">بشمهندسة آية حميد </li><br>
+                    <li class="text-black names">مس دنيا</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul style="list-style: none;">
+                    <li class="fw-bold text-black">مصريات</li><br>
+                    <li class="text-black names"> تاريخ </li><br>
+                    <li class="text-black names">© 2024 مصريات </li>
+                </ul>
+            </div>
+        </div>
+        <div id="up-icon" class="me-3"><a style="color: black;" href="#sec" class="up-icon fa-2xl"><i
+                    class="fa-solid fa-circle-chevron-up"></i></div>
+    </div>
+    <script src="loginSocial.js"></script>
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
